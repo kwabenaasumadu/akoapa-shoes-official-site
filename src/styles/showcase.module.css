@@ -25,6 +25,10 @@
    width: 75%;
 }
 
+.thirdText p{
+   line-height: 26px;
+}
+
 .callToAction{
    margin-top: 2%;
 }
