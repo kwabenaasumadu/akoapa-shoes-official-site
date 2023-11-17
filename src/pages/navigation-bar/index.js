@@ -7,7 +7,7 @@ import ShoppingCart from "@mui/icons-material/ShoppingCart";
 function Index() {
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container} ${styles.stickeyHeader}`}>
         <div className={styles.containerItems}>
           <div className={styles.leftItems}>
             <div className={styles.companyName}>

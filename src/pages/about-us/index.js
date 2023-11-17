@@ -7,6 +7,52 @@ function index() {
       <div className={styles.container}>
         <div className={styles.containerHead}>
           <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          <h1>About Us</h1>
+          
+
         </div>
       </div>
     </>

@@ -68,25 +68,51 @@
    display: flex;
 }
 
-.signInBtn{
+.signInBtn {
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
-.signInBtn button{
+.signInBtn button {
    border: none;
    background: none;
 }
 
-.signUpBtn{
+.signUpBtn {
    display: flex;
    justify-content: center;
    align-items: center;
    margin-left: 20px;
 }
 
-.signUpBtn button{
+.signUpBtn button {
    border: none;
    background: none;
+}
+
+@media (max-width: 700px) {
+   .container {
+      width: 165%;
+   }
+
+   .containerItems {
+      grid-template-columns: 1fr auto;
+   }
+
+   .socialMediaHandles {
+      display: none;
+   }
+
+   .leftItems {
+      grid-template-columns: 1fr;
+   }
+
+   .otherHandles p {
+      font-size: 13px;
+   }
+
+   .rightItems button {
+      font-size: 13px;
+   }
 }

@@ -100,3 +100,36 @@
       transform: scale(0.5);
    }
 }
+
+
+@media (max-width: 700px) {
+   .container{
+      width: 160%;
+      margin-top: 10%;
+   }
+
+   .containerItems{
+      grid-template-columns: 1fr;
+   }
+
+   .showcaseText{
+      width: 110%;
+   }
+
+   .thirdText{
+      width: 100%;
+   }
+
+   .imageAnimationContainer{
+      width: 110%;
+   }
+
+   .images{
+      margin-top: 0;
+      margin-left: 0%;
+   }
+
+   .image{
+      width: 100%;
+   }
+}
