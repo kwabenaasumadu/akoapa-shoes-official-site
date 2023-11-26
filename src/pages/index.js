@@ -2,15 +2,16 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import FirstHeader from "../pages/firstHeader";
 import NavigationBar from "../pages/navigation-bar";
+import ThirdHeader from "../pages/third_Header";
 import ShowCase from "../pages/showcase";
 import AboutUs from "../pages/about-us";
-import Services from './services'
+import Services from "./services";
 import Head from "next/head";
 
 function Index() {
   return (
     <>
-   <Head>
+      <Head>
         <head>
           <title>Akoapa Shoes</title>
           <meta
@@ -19,16 +20,17 @@ function Index() {
           />
         </head>
       </Head>
-    
+
       <div className={styles.body}>
         <div className={styles.firstHeader_Navigation}>
           <FirstHeader />
           <NavigationBar />
         </div>
-       
-        <ShowCase/>
-        <AboutUs/>
-        <Services/>
+        <ThirdHeader />
+
+        <ShowCase />
+        {/* <AboutUs />
+        <Services /> */}
       </div>
     </>
   );

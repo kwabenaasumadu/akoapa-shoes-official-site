@@ -1,48 +1,56 @@
 .container {
-   width: 70%;
-   margin: 0 auto;
+   width: 60%;
+   margin: -2% auto;
 }
 
 .containerItems {
    display: grid;
-   grid-template-columns: 1fr auto 1fr;
+   grid-template-columns: 1fr auto;
 }
 
-.companyName {
+.navigationContainer {
    display: flex;
    justify-content: flex-start;
    align-items: center;
 }
 
-.mobileNavigationContainer {
-   display: none;
-}
-
-.companyName h1 {
-   font-size: 20px;
-   font-family: sans-serif;
-   text-transform: uppercase;
-}
-
-.navigationContainer {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   margin-top: 5%;
-}
-
-.eachLink {
+.navigationContainer .eachLink {
    text-decoration: none;
-   margin-left: 10px;
+   margin-right: 20px;
    text-transform: uppercase;
+   font-size: 14px;
    font-family: sans-serif;
-   font-size: 13px;
-   font-weight: 700;
    color: #000;
 }
 
-.eachLink:nth-child(1) {
-   color: blue;
+.addCart {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.cartIcon {
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cartText {
+   margin-left: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cartText p {
+   font-size: 14px;
+   text-transform: uppercase;
+   font-family: sans-serif;
+}
+
+.cartText p:nth-child(2) {
+   margin-left: 4px;
 }
 
 
@@ -50,59 +58,7 @@
 @media (max-width: 700px) {
    .container {
       width: 100%;
-      margin: 0;
-      margin-top: 8%;
-   }
-
-   .containerItems {
-      grid-template-columns: 1fr auto;
-   }
-
-   .companyName {
-      width: 100%;
-   }
-
-   .companyName h1 {
-      width: 100%;
-      font-size: 18px;
-   }
-
-   .navigationContainer {
       display: none;
-   }
-
-
-
-   .mobileNavigationContainer {
-      cursor: pointer;
-      display: block;
-   }
-
-   .MenuIcon{
-      font-size: 30px;
-   }
-
-   .mobileNavigationLinks {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 200px;
-      background-color: #aeaeae;
-      transition: left 0.9s ease;
-      z-index: 1;
-   }
-
-   .mobileNavigationLinks .eachLink {
-      display: block;
-      padding: 15px;
-      color: black;
-      text-decoration: none;
-   }
-
-
-   .mobileNavigationLinks.active {
-      left: 0;
    }
 
 }

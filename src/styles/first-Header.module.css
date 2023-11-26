@@ -1,36 +1,121 @@
-.container{
-   width: 70%;
-   margin: 0 auto;
+.container {
+   width: 60%;
+   margin: 5% auto;
 }
 
-.iconsContainer{
+.containerItems {
+   display: grid;
+   grid-template-columns: 1fr auto;
+}
+
+.containerName {
    display: flex;
-   justify-content: flex-end;
-   align-items: flex-end;
+   justify-content: flex-start;
+   align-items: center;
 }
 
-.icon{
-   font-size: 10px;
-}
-
-.theIcon{
+.containerName h1 {
+   text-transform: uppercase;
    font-size: 20px;
-   margin-left: 15px;
-   font-weight: 100;
+   font-weight: 700;
+   font-family: sans-serif;
 }
 
-
-@media (max-width: 700px) {
- .container{
-   width: 100%;
-   margin: 0;
+.searchContainer {
    display: flex;
    justify-content: flex-end;
    align-items: center;
- }
+}
 
- .theIcon{
-   font-size: 16px;
-   margin-left: 9px;
- }
+.searchContainer input {
+   border: 1px solid #f2f2f2;
+   height: 40px;
+   width: 250px;
+   border-radius: 20px;
+}
+
+.searchContainer input::placeholder {
+   padding-left: 20px;
+   font-family: sans-serif;
+}
+
+.SearchIconContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: -40px;
+   background-color: rgb(158, 211, 158);
+   color: #fff;
+   height: 40px;
+   width: 40px;
+   border-radius: 20px;
+   font-size: 20px;
+}
+
+.mobileNavigationContainer {
+   display: none;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+   .container {
+      width: 90%;
+      height: 100%;
+   }
+
+   .containerItems {
+      grid-template-columns: 1fr auto;
+   }
+
+   .mobileNavigationContainer {
+      display: block;
+   }
+
+   .searchContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+   }
+
+   .searchContainer input {
+      width: 100%;
+   }
+
+   .mobileNavigationContainer {
+      cursor: pointer;
+      display: block;
+   }
+
+   .MenuIcon{
+      font-size: 30px;
+   }
+
+   .mobileNavigationLinks {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #aeaeae;
+      transition: left 0.9s ease;
+      z-index: 1;
+   }
+
+   .mobileNavigationLinks .eachLink {
+      display: block;
+      padding: 15px;
+      color: black;
+      text-decoration: none;
+   }
+
+
+   .mobileNavigationLinks.active {
+      left: 0;
+   }
+
 }
