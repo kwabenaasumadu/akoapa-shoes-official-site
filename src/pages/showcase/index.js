@@ -3,6 +3,8 @@ import styles from "../../styles/showcase.module.css";
 import Image from "next/image";
 
 function Index() {
+
+  
   return (
     <>
       <div className={styles.container}>
@@ -35,6 +37,24 @@ function Index() {
           </div>
 
           <div className={styles.imageAnimationContainer}>
+            <div className={styles.image}>
+              <Image
+                src="/image.png"
+                height={100}
+                width={100}
+                alt="first_image"
+                className={styles.showImage}
+              />
+            </div>
+            <div className={styles.image}>
+              <Image
+                src="/image.png"
+                height={100}
+                width={100}
+                alt="first_image"
+                className={styles.showImage}
+              />
+            </div>
             <div className={styles.image}>
               <Image
                 src="/image.png"

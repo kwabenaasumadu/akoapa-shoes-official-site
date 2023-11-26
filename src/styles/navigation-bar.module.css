@@ -51,7 +51,7 @@
    .container {
       width: 100%;
       margin: 0;
-      margin-top: 5%;
+      margin-top: 8%;
    }
 
    .containerItems {
@@ -64,7 +64,7 @@
 
    .companyName h1 {
       width: 100%;
-      font-size: 15px;
+      font-size: 18px;
    }
 
    .navigationContainer {
@@ -76,6 +76,10 @@
    .mobileNavigationContainer {
       cursor: pointer;
       display: block;
+   }
+
+   .MenuIcon{
+      font-size: 30px;
    }
 
    .mobileNavigationLinks {

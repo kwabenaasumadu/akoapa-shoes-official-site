@@ -49,14 +49,24 @@
    border: 1px solid #aeaeae;
 }
 
-.imageAnimationContainer{
-  width: 100%;
-}
 
 .showImage{
    width: 400px;
    height: 400px;
 }
+
+/* Add these styles to your existing stylesheet (showcase.module.css) */
+
+.imageAnimationContainer {
+   display: flex;
+   overflow: hidden; /* Hide the overflow to make sure only one image is visible at a time */
+ }
+ 
+ .image {
+   flex: 0 0 100%; /* Make each image take the full width of the container */
+   transition: transform 0.5s ease-in-out; /* Add a transition for smooth sliding */
+ }
+ 
 
 
 

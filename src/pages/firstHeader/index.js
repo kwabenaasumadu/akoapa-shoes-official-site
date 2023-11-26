@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../styles/first-Header.module.css";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -12,7 +12,7 @@ function Index() {
       <div className={styles.container}>
         <div className={styles.iconsContainer}>
           <div className={styles.icon}>
-            <FacebookIcon className={styles.theIcon} />
+            <FacebookOutlinedIcon className={styles.theIcon} />
           </div>
           <div className={styles.icon}>
             <LinkedInIcon className={styles.theIcon}  />

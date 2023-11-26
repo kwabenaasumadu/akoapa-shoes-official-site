@@ -43,7 +43,7 @@ function Index() {
             className={styles.mobileNavigationContainer}
             onClick={isMobileOpen ? closeMobileNavLinks : openMobileNavLinks}
           >
-            <MenuIcon />
+            <MenuIcon className={styles.MenuIcon}/>
           </div>
 
           {isMobileOpen && (
