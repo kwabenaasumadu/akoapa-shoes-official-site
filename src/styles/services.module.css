@@ -1,0 +1,32 @@
+.container {
+   width: 100%;
+
+   background-color: #fff;
+}
+
+.containerItems {
+   background-color: #fff;
+}
+
+.containerHeader {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.servicesText {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.boxes {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+   width: 200px;
+   height: 200px;
+   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
