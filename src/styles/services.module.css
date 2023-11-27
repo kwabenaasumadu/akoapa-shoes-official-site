@@ -1,6 +1,6 @@
 .container {
-   width: 100%;
-
+   width: 60%;
+   margin: 10% auto;
    background-color: #fff;
 }
 
@@ -12,6 +12,11 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom: 30px;
+}
+
+.containerHeader h1{
+   font-size: 23px;
 }
 
 .servicesText {
@@ -23,10 +28,63 @@
 .boxes {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   gap: 40px;
 }
 
 .box {
-   width: 200px;
-   height: 200px;
-   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+   width: 100%;
+}
+
+.boxHeader{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.boxHeader h1{
+   font-size: 20px;
+   font-family: sans-serif;
+   font-weight: 100;
+}
+
+.boxText{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.boxText p{
+   font-size: 15px;
+   letter-spacing: 0.5px;
+   font-weight: 0;
+   font-family: sans-serif;
+}
+
+@media (max-width: 700px) {
+   .container{
+      width: 100%;
+   }
+
+   .containerHeader h1{
+      font-size: 20px;
+   }
+
+   .boxes{
+      grid-template-columns: auto;
+   }
+
+   .box{
+      width: 70%;
+      margin: 0 auto;
+   }
+
+   .boxHeader h1{
+      font-size: 15px;
+   }
+
+   .boxText p{
+      font-size: 14px;
+   }
 }

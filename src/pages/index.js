@@ -4,6 +4,8 @@ import FirstHeader from "../pages/firstHeader";
 import NavigationBar from "../pages/navigation-bar";
 import ThirdHeader from "../pages/third_Header";
 import ShowCase from "../pages/showcase";
+import Categories from '../pages/categories'
+import NewArrivals from '../pages/new_Arrivals'
 import AboutUs from "../pages/about-us";
 import Services from "./services";
 import Head from "next/head";
@@ -29,8 +31,11 @@ function Index() {
         <ThirdHeader />
 
         <ShowCase />
-        {/* <AboutUs />
-        <Services /> */}
+        <Categories/>
+        <Services />
+        <NewArrivals/>
+        {/* <AboutUs /> */}
+      
       </div>
     </>
   );
