@@ -1,40 +1,60 @@
-"use client"
+"use client";
 
 import React from "react";
 import styles from "../../styles/about-us.module.css";
 import Image from "next/image";
+import Facebook from "@mui/icons-material/Facebook";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import Twitter from "@mui/icons-material/Twitter";
+import  Instagram from "@mui/icons-material/Instagram";
 
 function index() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.containerItems}>
-          <div className={styles.aboutImage}>
-            <Image
-              width={100}
-              height={100}
-              alt="about_image"
-              src="/image20.jpg"
-              className={styles.aboutImg}
-            />
-          </div>
+        <div className={styles.containerHeader}>
+          <h1>Follow Us</h1>
+        </div>
 
-          <div className={styles.aboutTextContainer}>
-            <div className={styles.aboutHeader}>
-              <h1>About Us</h1>
+        <div className={styles.socialHandles}>
+          <div className={styles.socialmedia}>
+            <div className={styles.socialmediaIcon}>
+              <Facebook className={styles.icon1} />
             </div>
 
-            <div className={styles.aboutMainText}>
-              <p>
-                Designed with educators and administrators in mind, our system
-                ensures a user-friendly experience, reducing the learning curve
-                Designed with educators and administrators in mind, our system
-                ensures a user-friendly experience, reducing the learning curve
-                Designed with educators and administrators in mind, our system
-                ensures a user-friendly experience, reducing the learning curve
-                Designed with educators and administrators in mind, our system
-                ensures a user-friendly experience, reducing the learning curve
-              </p>
+            <div className={styles.socialmediaName}>
+              <h1>FaceBook</h1>
+            </div>
+          </div>
+
+          <div className={styles.socialmedia}>
+            <div className={styles.socialmediaIcon}>
+              <LinkedIn className={styles.icon2}/>
+            </div>
+
+            <div className={styles.socialmediaName}>
+              <h1>LinkedIn</h1>
+            </div>
+          </div>
+
+
+          <div className={styles.socialmedia}>
+            <div className={styles.socialmediaIcon}>
+              <Twitter className={styles.icon3} />
+            </div>
+
+            <div className={styles.socialmediaName}>
+              <h1>Twitter</h1>
+            </div>
+          </div>
+
+          <div className={styles.socialmedia}>
+            <div className={styles.socialmediaIcon}>
+              <Instagram className={styles.icon4} />
+            </div>
+
+            <div className={styles.socialmediaName}>
+              <h1>Instagram</h1>
             </div>
           </div>
         </div>

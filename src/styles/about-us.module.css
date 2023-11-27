@@ -1,14 +1,49 @@
-.container{
-   width: 70%;
-   margin: 4% auto;
+.container {
+   width: 50%;
+   margin: 10% auto;
 }
 
-.containerItems{
+.containerHeader {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.containerHeader h1 {
+   font-size: 20px;
+   font-family: sans-serif;
+}
+
+.socialHandles {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-top: 6%;
 }
 
-.aboutImg{
-   width: 400px;
-   height: 400px;
+.socialmedia {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.socialmediaIcon .icon1{
+   color: blue;
+}
+
+.socialmediaName h1 {
+   font-size: 15px;
+   font-family: sans-serif;
+   color: rgb(158, 211, 158);
+}
+
+@media (max-width: 700px) {
+ .container{
+   width: 100%;
+ }
+
+ .socialmediaName h1{
+   font-size: 13px;
+   font-weight: 100;
+ }
 }

@@ -4,23 +4,25 @@ import FirstHeader from "../pages/firstHeader";
 import NavigationBar from "../pages/navigation-bar";
 import ThirdHeader from "../pages/third_Header";
 import ShowCase from "../pages/showcase";
-import Categories from '../pages/categories'
-import NewArrivals from '../pages/new_Arrivals'
+import Categories from "../pages/categories";
+import NewArrivals from "../pages/new_Arrivals";
+import Feedback from "../pages/feedback";
 import AboutUs from "../pages/about-us";
 import Services from "./services";
 import Head from "next/head";
+import Footer from '../pages/footer'
 
 function Index() {
   return (
     <>
       <Head>
-        <head>
+      
           <title>Akoapa Shoes</title>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-        </head>
+     
       </Head>
 
       <div className={styles.body}>
@@ -31,11 +33,12 @@ function Index() {
         <ThirdHeader />
 
         <ShowCase />
-        <Categories/>
+        <Categories />
         <Services />
-        <NewArrivals/>
-        {/* <AboutUs /> */}
-      
+        <NewArrivals />
+        <Feedback />
+        <AboutUs />
+        <Footer/>
       </div>
     </>
   );
