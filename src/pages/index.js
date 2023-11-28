@@ -27,8 +27,6 @@ function Index() {
 
       <div className={styles.body}>
         <div className={styles.firstHeader_Navigation}>
-          <FirstHeader />
-          <NavigationBar />
         </div>
         <ThirdHeader />
 

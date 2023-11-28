@@ -16,10 +16,10 @@ function Index() {
               Home
             </Link>
             <Link href="/" className={styles.eachLink}>
-              MEN
+              About
             </Link>
-            <Link href="/" className={styles.eachLink}>
-              WOMEN
+            <Link href="/shoe_categories/" className={styles.eachLink}>
+              Categories
             </Link>
             <Link href="/" className={styles.eachLink}>
               Contact
