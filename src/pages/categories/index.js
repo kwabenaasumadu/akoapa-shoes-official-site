@@ -7,7 +7,7 @@ function index() {
     <>
       <div className={styles.container}>
         <div className={styles.containerHeader}>
-          <h1>categories</h1>
+          <h1>Deal of the Month</h1>
         </div>
 
         <div className={styles.containerItems}>
