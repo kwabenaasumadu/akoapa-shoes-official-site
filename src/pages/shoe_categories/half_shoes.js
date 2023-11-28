@@ -22,7 +22,9 @@ function Index() {
             const url = await getDownloadURL(item);
             return url;
           })
+
         );
+        
   
         setSlippersImages(imageURLs);
       };
