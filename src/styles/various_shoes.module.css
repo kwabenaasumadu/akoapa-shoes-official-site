@@ -47,23 +47,24 @@
 }
 
 .image {
-   width: 200px;
-   height: 200px;
+   width: 100%;
+   height: 100%;
 }
 
-.catName{
+.catName {
    display: flex;
    justify-content: center;
    align-items: center;
    margin-top: 10px;
 }
 
-.catName h1{
+.catName h1 {
    font-size: 15px;
-
+   font-weight: 100;
+   font-family: sans-serif;
 }
 
-/* various_shoes.module.css */
+
 .modalOverlay {
    position: fixed;
    padding: 12px;
@@ -71,50 +72,71 @@
    left: 0;
    width: 100vw;
    height: 100vh;
-   background: rgb(158, 211, 158);;
+   background: rgb(158, 211, 158);
    display: flex;
    justify-content: center;
    align-items: center;
- }
- 
- .modalContent {
+}
+
+.modalContent {
    max-width: 100%;
    max-height: 100%;
- }
+}
 
- .modalOverlay button{
+.modalOverlay button {
    padding: 10px;
- }
- 
- .modalImage {
+}
+
+.modalImage {
    width: 100%;
    height: 100%;
-   object-fit: contain;
- }
- 
+   object-fit: fill;
+}
+
+.pagination {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.pagination button{
+   width: 100px;
+   height: 30px;
+   margin: 10px;
+   border-radius: 10px;
+}
+
 
 @media (max-width: 700px) {
-   .container{
-     width: 100%;
+   .container {
+      width: 100%;
    }
 
-   .cateContainer{
+   .cateContainer {
       width: 100%;
       padding: 0;
    }
 
-   .boxes{
+   .boxes {
       grid-template-columns: 1fr 1fr;
       gap: 15px;
       padding: 10px;
    }
 
-   .box{
-      width: 160px;
+   .box {
+      width: 100%;
    }
 
-   .image{
-      width: 100px;
-      height: 100px;
+   .image {
+      width: 100%;
+      height: 100%;
    }
-  }
+
+   .catName h1 {
+      font-weight: 100;
+      font-size: 13px;
+      font-family: sans-serif;
+   }
+}
