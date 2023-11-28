@@ -30,11 +30,9 @@ function Index() {
   const imageSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    speed: 1000,
     autoplay: true, // Auto play the slides
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   };
 
   return (
