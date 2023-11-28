@@ -24,14 +24,14 @@ function Index() {
           })
 
         );
-        
+
   
         setSlippersImages(imageURLs);
       };
   
       fetchSlippersImages();
     }, []);
-  
+
     const openModal = (image) => {
       setSelectedImage(image);
       setIsModalOpen(true);
