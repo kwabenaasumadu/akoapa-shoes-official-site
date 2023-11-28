@@ -14,7 +14,7 @@ function index() {
           <div className={styles.item}>
             <div className={styles.itemImage}>
               <Image
-                src="/image18-removebg-preview.png"
+                src="/showcase1.png"
                 width={300}
                 height={300}
                 alt="item1"
@@ -30,7 +30,7 @@ function index() {
           <div className={styles.item}>
             <div className={styles.itemImage}>
               <Image
-                src="/image12-removebg-preview.png"
+                src="/showcase3.png"
                 width={300}
                 height={300}
                 alt="item1"
@@ -46,7 +46,7 @@ function index() {
           <div className={styles.item}>
             <div className={styles.itemImage}>
               <Image
-                src="/image24-removebg.png"
+                src="/showcase5.png"
                 width={300}
                 height={300}
                 alt="item1"

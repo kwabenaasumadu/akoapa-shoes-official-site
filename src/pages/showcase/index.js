@@ -45,7 +45,7 @@ function Index() {
           <Slider {...imageSettings} className={styles.imageAnimationContainer}>
             <div className={styles.image}>
               <Image
-                src="/image12-removebg-preview.png"
+                src="/showcase1.png"
                 height={400}
                 width={400}
                 alt="first_image"
@@ -54,7 +54,7 @@ function Index() {
             </div>
             <div className={styles.image}>
               <Image
-                src="/image14-removebg-preview.png"
+                src="/showcase7.png"
                 height={400}
                 width={400}
                 alt="second_image"
@@ -63,7 +63,7 @@ function Index() {
             </div>
             <div className={styles.image}>
               <Image
-                src="/image18-removebg-preview.png"
+                src="/showcase2.png"
                 height={400}
                 width={400}
                 alt="third_image"
@@ -73,7 +73,37 @@ function Index() {
 
             <div className={styles.image}>
               <Image
-                src="/image24-removebg.png"
+                src="/showcase3.png"
+                height={400}
+                width={400}
+                alt="third_image"
+                className={styles.showImage}
+              />
+            </div>
+
+            <div className={styles.image}>
+              <Image
+                src="/showcase4.png"
+                height={400}
+                width={400}
+                alt="third_image"
+                className={styles.showImage}
+              />
+            </div>
+
+            <div className={styles.image}>
+              <Image
+                src="/showcase5.png"
+                height={400}
+                width={400}
+                alt="third_image"
+                className={styles.showImage}
+              />
+            </div>
+
+            <div className={styles.image}>
+              <Image
+                src="/showcase6.png"
                 height={400}
                 width={400}
                 alt="third_image"
