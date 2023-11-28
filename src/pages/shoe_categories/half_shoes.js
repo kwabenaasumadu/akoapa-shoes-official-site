@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/various_shoes.module.css";
 import Image from "next/image";
-import { getStorage, ref as storageRef, listAll, getDownloadURL } from "firebase/storage";
-import firebase from '../../../firebase.config';
+import {
+  getStorage,
+  ref as storageRef,
+  listAll,
+  getDownloadURL,
+} from "firebase/storage";
+import firebase from "../../../firebase.config";
 import Modal from "react-modal";
 
 function Index() {
@@ -10,6 +15,7 @@ function Index() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
   const itemsPerPage = 10;
 
   useEffect(() => {
@@ -49,6 +55,15 @@ function Index() {
     setCurrentPage(pageNumber);
   };
 
+  useEffect(() => {
+   // Check if slippersImages array is empty and update isLoading state
+   if (slippersImages.length === 0) {
+     setIsLoading(true);
+   } else {
+     setIsLoading(false);
+   }
+ }, [slippersImages])
+
   return (
     <>
       <div className={styles.container}>
@@ -59,7 +74,11 @@ function Index() {
         <div className={styles.cateContainer}>
           <div className={styles.boxes}>
             {currentItems.map((imageUrl, index) => (
-              <div className={styles.box} key={index} onClick={() => openModal(imageUrl)}>
+              <div
+                className={styles.box}
+                key={index}
+                onClick={() => openModal(imageUrl)}
+              >
                 <div className={styles.cateImage}>
                   <Image
                     src={imageUrl}
@@ -79,10 +98,16 @@ function Index() {
       </div>
 
       <div className={styles.pagination}>
-        <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>
+        <button
+          onClick={() => paginate(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
           Previous
         </button>
-        <button onClick={() => paginate(currentPage + 1)} disabled={currentItems.length < itemsPerPage}>
+        <button
+          onClick={() => paginate(currentPage + 1)}
+          disabled={currentItems.length < itemsPerPage}
+        >
           Next
         </button>
       </div>
@@ -106,6 +131,13 @@ function Index() {
         )}
         <button onClick={closeModal}>Close</button>
       </Modal>
+
+      {isLoading && (
+        <div className={styles.isLoadingContainer}>
+          <div className={styles.circle}></div>
+          <h1 style={{fontSize: '15px', fontWeight: '100px'}}>Loading...</h1>
+        </div>
+      )}
     </>
   );
 }
