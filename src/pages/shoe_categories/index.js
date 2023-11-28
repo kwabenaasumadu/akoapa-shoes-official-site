@@ -18,7 +18,7 @@ function Index() {
             <div className={styles.box}>
               <div className={styles.cateImage}>
                 <Image
-                  src="/image2.jpg"
+                  src="/image7.png"
                   width={400}
                   height={400}
                   alt="first categories"
