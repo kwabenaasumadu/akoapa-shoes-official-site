@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/shoe_cat.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Index() {
   return (
@@ -12,6 +13,8 @@ function Index() {
 
         <div className={styles.cateContainer}>
           <div className={styles.boxes}>
+
+          <Link href="/shoe_categories/half_shoes" style={{textDecoration: 'none'}}>
             <div className={styles.box}>
               <div className={styles.cateImage}>
                 <Image
@@ -24,9 +27,10 @@ function Index() {
               </div>
 
               <div className={styles.catName}>
-                <h1>Male Boots</h1>
+                <h1>Shop Half Shoes</h1>
               </div>
             </div>
+            </Link>
 
             <div className={styles.box}>
               <div className={styles.cateImage}>
