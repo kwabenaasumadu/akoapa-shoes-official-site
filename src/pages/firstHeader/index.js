@@ -10,8 +10,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import Twitter from "@mui/icons-material/Twitter";
 
 function Index() {
+
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Set this based on user authentication status
 
   function openMobileNavLinks() {
     setIsMobileOpen(true);
@@ -20,11 +20,6 @@ function Index() {
   function closeMobileNavLinks() {
     setIsMobileOpen(false);
   }
-
-  const handleAuthenticationChange = () => {
-    // Update the authentication status when the user signs in or out
-    setIsLoggedIn(!isLoggedIn);
-  };
 
   return (
     <>
@@ -61,17 +56,13 @@ function Index() {
                   Contact
                 </Link>
 
-                {isLoggedIn ? (
-                  // If authenticated, show "Sign Out" link
-                  <Link href="/" className={styles.eachLink} onClick={handleAuthenticationChange}>
-                    Sign Out
-                  </Link>
-                ) : (
-                  // If not authenticated, show "Sign In" link
-                  <Link href="/user_login" className={styles.eachLink} onClick={closeMobileNavLinks}>
-                    Sign In
-                  </Link>
-                )}
+                <Link href="/user_login" className={styles.eachLink} onClick={closeMobileNavLinks}>
+                  Sign In
+                </Link>
+
+                <Link href="/user_login" className={styles.eachLink} onClick={closeMobileNavLinks}>
+                  Sign Out
+                </Link>
               </div>
             </div>
           )}
