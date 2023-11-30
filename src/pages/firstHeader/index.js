@@ -60,7 +60,7 @@ function Index() {
                   Sign In
                 </Link>
 
-                <Link href="/user_login" className={styles.eachLink} onClick={closeMobileNavLinks}>
+                <Link href="/user_signout" className={styles.eachLink} onClick={closeMobileNavLinks}>
                   Sign Out
                 </Link>
               </div>

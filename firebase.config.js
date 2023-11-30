@@ -19,4 +19,4 @@ const db = getDatabase(app);
 const auth = getAuth(app);
 const storage = getStorage(app); // Initialize the storage module
 
-export { db, app, auth, storage }; // Export the storage module
+export { db, app, auth, storage }; 
