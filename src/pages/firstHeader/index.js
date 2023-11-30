@@ -55,6 +55,10 @@ function Index() {
                 <Link href="/" className={styles.eachLink} onClick={closeMobileNavLinks}>
                   Contact
                 </Link>
+
+                <Link href="/user_login" className={styles.eachLink} onClick={closeMobileNavLinks}>
+                  Sign In
+                </Link>
               </div>
             </div>
           )}

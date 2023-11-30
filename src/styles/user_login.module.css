@@ -1,0 +1,81 @@
+.container{
+   width: 50%;
+   height: 50vh;
+   background-color: rgb(158, 211, 158);
+   margin: 6% auto;
+   padding: 10px;
+}
+
+.containerHeader{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.formContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5%;
+}
+
+.inputFields{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.inputFields input{
+   width: 300px;
+   height: 45px;
+   margin: 10px;
+   border: 1px solid #f2f2f2;
+   border-radius: 10px;
+}
+
+.inputFields input::placeholder{
+   padding-left: 20px;
+   font-size: 15px;
+}
+
+.signInBtn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 4%;
+}
+
+.signInBtn button{
+   width: 100px;
+   height: 40px;
+   border-radius: 10px;
+   border: 1px solid #f2f2f2;
+   background-color: black;
+   color: #f2f2f2;
+   text-transform: uppercase;
+}
+
+.signUp{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-top: 10%;
+}
+
+.signUp p{
+   margin-right: 10px;
+   font-size: 15px;
+}
+
+@media (max-width: 700px) {
+   .container{
+      width: 90%;
+      height: 70vh;
+      border-radius: 10px;
+   }
+
+   .signUp{
+      margin-top: 40%;
+   }
+}
