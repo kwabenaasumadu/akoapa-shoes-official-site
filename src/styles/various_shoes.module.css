@@ -117,6 +117,10 @@
    flex-direction: column;
    margin-top: 40px;
  }
+
+ .isLoadingContainer2{
+   position: absolute;
+ }
  
  .circle {
    width: 20px;

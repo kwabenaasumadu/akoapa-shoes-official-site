@@ -13,23 +13,53 @@ function Index() {
 
         <div className={styles.cateContainer}>
           <div className={styles.boxes}>
+            <Link
+              href="/shoe_categories/half_shoes"
+              style={{
+                textDecoration: "none",
+                color: "#000",
+                cursor: "pointer",
+              }}
+            >
+              <div className={styles.box}>
+                <div className={styles.cateImage}>
+                  <Image
+                    src="/image7.png"
+                    width={400}
+                    height={400}
+                    alt="first categories"
+                    className={styles.image}
+                  />
+                </div>
 
-          <Link href="/shoe_categories/half_shoes" style={{textDecoration: 'none'}}>
-            <div className={styles.box}>
-              <div className={styles.cateImage}>
-                <Image
-                  src="/image7.png"
-                  width={400}
-                  height={400}
-                  alt="first categories"
-                  className={styles.image}
-                />
+                <div className={styles.catName}>
+                  <h1>Shop Half Shoes</h1>
+                </div>
               </div>
+            </Link>
 
-              <div className={styles.catName}>
-                <h1>Shop Half Shoes</h1>
+            <Link
+              href="/shoe_categories/male_boot"
+              style={{
+                textDecoration: "none",
+                color: "#000",
+                cursor: "pointer",
+              }}
+            >
+              <div className={styles.box}>
+                <div className={styles.cateImage}>
+                  <Image
+                    src="/showcase4.png"
+                    width={400}
+                    height={400}
+                    alt="first categories"
+                    className={styles.image}
+                  />
+                </div>
+                <div className={styles.catName}>
+                  <h1>Men & Women Boots</h1>
+                </div>
               </div>
-            </div>
             </Link>
 
             <div className={styles.box}>
@@ -77,7 +107,6 @@ function Index() {
               </div>
             </div>
 
-            
             <div className={styles.box}>
               <div className={styles.cateImage}>
                 <Image
@@ -93,23 +122,6 @@ function Index() {
               </div>
             </div>
 
-            
-            <div className={styles.box}>
-              <div className={styles.cateImage}>
-                <Image
-                  src="/image2.jpg"
-                  width={400}
-                  height={400}
-                  alt="first categories"
-                  className={styles.image}
-                />
-              </div>
-              <div className={styles.catName}>
-                <h1>Male Boots</h1>
-              </div>
-            </div>
-
-            
             <div className={styles.box}>
               <div className={styles.cateImage}>
                 <Image

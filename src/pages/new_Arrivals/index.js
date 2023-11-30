@@ -58,6 +58,8 @@ function Index() {
               <p>Man Shoes </p>
             </div>
           </div>
+
+          
         </div>
       </div>
     </>

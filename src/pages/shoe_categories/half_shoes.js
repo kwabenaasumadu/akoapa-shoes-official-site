@@ -56,13 +56,14 @@ function Index() {
   };
 
   useEffect(() => {
-   // Check if slippersImages array is empty and update isLoading state
-   if (slippersImages.length === 0) {
-     setIsLoading(true);
-   } else {
-     setIsLoading(false);
-   }
- }, [slippersImages])
+    // Check if slippersImages array is empty and update isLoading state
+    if (slippersImages.length === 0) {
+      setIsLoading(true);
+    } else {
+      setIsLoading(false);
+    }
+  }, [slippersImages]);
+
 
   return (
     <>
@@ -135,7 +136,7 @@ function Index() {
       {isLoading && (
         <div className={styles.isLoadingContainer}>
           <div className={styles.circle}></div>
-          <h1 style={{fontSize: '15px', fontWeight: '100px'}}>Loading...</h1>
+          <h1 style={{ fontSize: "15px", fontWeight: "100px" }}>Loading...</h1>
         </div>
       )}
     </>
