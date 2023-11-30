@@ -3,21 +3,24 @@ import styles from "../../styles/user_login.module.css";
 import Link from "next/link";
 import {auth} from '../../../firebase.config'
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useRouter } from "next/router";
 
 function Index() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter()
 
-  const sigUp = (e) => {
-    e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  const sigUp = async (e) => {
+   e.preventDefault();
+   try {
+     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+     console.log(userCredential);
+     router.push('/')
+   } catch (error) {
+     console.error(error);
+   }
+ };
+ 
 
   return (
     <>
@@ -51,7 +54,7 @@ function Index() {
         </div>
 
         <div className={styles.signUp}>
-          <p>Create account</p>
+          <p>Sign In</p>
           <Link href="/user_login">Sign In</Link>
         </div>
       </div>
