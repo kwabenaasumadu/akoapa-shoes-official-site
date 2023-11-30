@@ -1,25 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import styles from "../../styles/user_login.module.css";
 import Link from "next/link";
 import { auth } from "../../../firebase.config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { sendPasswordResetEmail } from "firebase/auth";
+import { useRouter } from "next/router";
 
 function Index() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const [resetSuccessMessage, setResetSuccessMessage] = useState("");
 
-  const signIn = (e) => {
+  const router = useRouter();
+
+  const signIn = async (e) => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch((error) => {
-        console.log(error);
+
+    setLoading(true);
+
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      console.log(userCredential);
+      router.push('/')
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message, {
+        position: "top-right",
+        autoClose: 5000, // milliseconds
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
       });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const resetPassword = () => {
@@ -29,6 +47,14 @@ function Index() {
       })
       .catch((error) => {
         console.log(error);
+        toast.error(error.message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
       });
   };
 
@@ -57,7 +83,9 @@ function Index() {
               />
 
               <div className={styles.signInBtn}>
-                <button type="submit">Log In</button>
+                <button type="submit" disabled={loading}>
+                  {loading ? "Please wait..." : "Log In"}
+                </button>
               </div>
             </div>
           </form>
@@ -68,6 +96,7 @@ function Index() {
           <Link href="/user_signup">Sign up</Link>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }

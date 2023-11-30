@@ -1,26 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "../../styles/user_login.module.css";
 import Link from "next/link";
-import {auth} from '../../../firebase.config'
+import { auth } from "../../../firebase.config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/router";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Index() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const router = useRouter()
+  const router = useRouter();
 
   const sigUp = async (e) => {
-   e.preventDefault();
-   try {
-     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-     console.log(userCredential);
-     router.push('/')
-   } catch (error) {
-     console.error(error);
-   }
- };
- 
+    e.preventDefault();
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      console.log(userCredential);
+
+      // Show success toast
+      toast.success("Account created successfully!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+      // Redirect to home page
+      router.push("/");
+    } catch (error) {
+      console.error(error);
+
+      // Show error toast
+      toast.error(error.message, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    }
+  };
 
   return (
     <>
@@ -58,6 +81,7 @@ function Index() {
           <Link href="/user_login">Sign In</Link>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 }
