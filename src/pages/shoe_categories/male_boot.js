@@ -7,7 +7,7 @@ import {
   listAll,
   getDownloadURL,
 } from "firebase/storage";
-import firebase from "../../../firebase.config";
+import firebase from '../../../firebase.config'
 import Modal from "react-modal";
 
 function Index() {
