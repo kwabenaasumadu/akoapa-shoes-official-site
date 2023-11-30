@@ -22,7 +22,7 @@ function Index() {
   useEffect(() => {
     const fetchNewArrivalsImages = async () => {
       const storage = getStorage(firebase);
-      const storageRefSlippers = storageRef(storage, "half_shoe");
+      const storageRefSlippers = storageRef(storage, "/new_arrivals");
       const imagesList = await listAll(storageRefSlippers);
 
       const imageURLs = await Promise.all(

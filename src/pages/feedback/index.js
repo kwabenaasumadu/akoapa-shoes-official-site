@@ -16,7 +16,7 @@ function Index() {
               width={100}
               height={100}
               alt="feedback_image"
-              src="/image4.jpg"
+              src="/showcase2.png"
               className={styles.userImage}
             />
           </div>
