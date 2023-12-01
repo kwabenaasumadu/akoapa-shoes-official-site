@@ -28,9 +28,7 @@ function Index() {
           <div className={styles.feedbackMessage}>
             <p>
                
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in
+             Good and quality shoes
             </p>
           </div>
         </div>

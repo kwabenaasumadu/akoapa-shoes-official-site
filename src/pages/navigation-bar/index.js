@@ -24,8 +24,8 @@ function Index() {
             <Link href="/" className={styles.eachLink}>
               Contact
             </Link>
-            <Link href="/" className={styles.eachLink}>
-              Contact
+            <Link href="/user_login" className={styles.eachLink}>
+              Sign in
             </Link>
           </div>
 

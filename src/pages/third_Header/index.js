@@ -6,7 +6,9 @@ function Index() {
     <>
       <div className={styles.container}>
         <div className={styles.containerText}>
-          <p>20% OFF It started with a simple idea Cr</p>
+          <p>
+            Step into savings! Enjoy 20% OFF our stylish footwear collection
+          </p>
         </div>
       </div>
     </>

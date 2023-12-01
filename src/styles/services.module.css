@@ -69,6 +69,7 @@
 
    .containerHeader h1{
       font-size: 20px;
+      text-align: center;
    }
 
    .boxes{
@@ -82,9 +83,11 @@
 
    .boxHeader h1{
       font-size: 15px;
+      text-align: center;
    }
 
    .boxText p{
       font-size: 14px;
+      text-align: center;
    }
 }

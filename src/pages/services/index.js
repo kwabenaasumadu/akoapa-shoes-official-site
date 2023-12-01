@@ -19,9 +19,7 @@ function Index() {
 
               <div className={styles.boxText}>
                 <p>
-                  Designed with educators and administrators in mind, our system
-                  ensures a user-friendly experience, reducing the learning
-                  curve
+                For our global customers, we extend our shipping services beyond borders. Wherever you are, we aim to bring our quality products to your doorstep
                 </p>
               </div>
             </div>
@@ -34,9 +32,7 @@ function Index() {
 
               <div className={styles.boxText}>
                 <p>
-                  Designed with educators and administrators in mind, our system
-                  ensures a user-friendly experience, reducing the learning
-                  curve
+                Our customer care team is here to assist you at every stage. If you have any questions regarding your order, shipping details, or need further assistance, don't hesitate to reach out to our dedicated support team.
                 </p>
               </div>
             </div>
@@ -48,9 +44,7 @@ function Index() {
 
               <div className={styles.boxText}>
                 <p>
-                  Designed with educators and administrators in mind, our system
-                  ensures a user-friendly experience, reducing the learning
-                  curve
+                Your security is paramount, especially when it comes to online transactions. We offer secure payment options, providing you with peace of mind while making your purchase. 
                 </p>
               </div>
             </div>

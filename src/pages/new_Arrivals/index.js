@@ -75,48 +75,44 @@ function Index() {
           <h1>New Arrivals</h1>
         </div>
         <div className={styles.containerItems}>
-          {isLoading ? (
-            <p>Loading...</p>
-          ) : (
-            currentItems.map((image, index) => (
-              <div
-                key={index}
-                className={styles.item}
-                onClick={() => openModal(image)}
-              >
-                <div className={styles.itemImage}>
-                  <Image
-                    src={image}
-                    width={300}
-                    height={300}
-                    alt={`item${index}`}
-                    className={styles.itemImg}
-                  />
-                </div>
-
-                <div className={styles.itemText}>
-                  <p>
-                    <Star /> <Star /> <Star /> <Star />{" "}
-                  </p>
-                </div>
+          {currentItems.map((image, index) => (
+            <div
+              key={index}
+              className={styles.item}
+              onClick={() => openModal(image)}
+            >
+              <div className={styles.itemImage}>
+                <Image
+                  src={image}
+                  width={300}
+                  height={300}
+                  alt={`item${index}`}
+                  className={styles.itemImg}
+                />
               </div>
-            ))
-          )}
+
+              <div className={styles.itemText}>
+                <p>
+                  <Star /> <Star /> <Star /> <Star />{" "}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
         <div className={styles.pagination}>
-        <button
-          onClick={() => paginate(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-        <button
-          onClick={() => paginate(currentPage + 1)}
-          disabled={currentItems.length < itemsPerPage}
-        >
-          Next
-        </button>
-      </div>
+          <button
+            onClick={() => paginate(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            Previous
+          </button>
+          <button
+            onClick={() => paginate(currentPage + 1)}
+            disabled={currentItems.length < itemsPerPage}
+          >
+            Next
+          </button>
+        </div>
       </div>
 
       <Modal
@@ -142,7 +138,7 @@ function Index() {
       {isLoading && (
         <div className={styles.isLoadingContainer}>
           <div className={styles.circle}></div>
-          <h1 style={{ fontSize: "15px", fontWeight: "100px" }}>Loading...</h1>
+          <h1 style={{ fontSize: "15px", fontWeight: "100px", display: 'flex', justifyContent: 'center' }}>Loading...</h1>
         </div>
       )}
     </>

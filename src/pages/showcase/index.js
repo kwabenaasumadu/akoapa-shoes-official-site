@@ -2,13 +2,19 @@ import React from "react";
 import styles from "../../styles/showcase.module.css";
 import Image from "next/image";
 import Slider from "react-slick";
+import { useRouter } from "next/router";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Index() {
+  const router = useRouter();
+
+  const returnCategories = ()=>{
+    router.push('/shoe_categories')
+  }
+  
   const textContent = (
     <>
-      
       <div className={styles.secondText}>
         <h1>Elevate Your Style with Our Shoe Collection</h1>
       </div>
@@ -20,7 +26,7 @@ function Index() {
       </div>
       <div className={styles.callToAction}>
         <div className={styles.buttons}>
-          <button>Shop Now</button>
+          <button onClick={returnCategories}>Shop Now</button>
           <button>Lets Talk</button>
         </div>
       </div>
@@ -34,6 +40,8 @@ function Index() {
     autoplay: true, // Auto play the slides
     autoplaySpeed: 2000,
   };
+
+
 
   return (
     <>

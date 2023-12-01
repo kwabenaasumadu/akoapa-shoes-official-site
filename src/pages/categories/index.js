@@ -23,7 +23,7 @@ function index() {
             </div>
 
             <div className={styles.itemText}>
-              <p>Women Shoes </p>
+              <p> </p>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ function index() {
             </div>
 
             <div className={styles.itemText}>
-              <p>Sliipers Shoes </p>
+              <p> </p>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ function index() {
             </div>
 
             <div className={styles.itemText}>
-              <p>Man Shoes </p>
+              <p></p>
             </div>
           </div>
         </div>
