@@ -29,6 +29,7 @@ function Index() {
                 cursor: "pointer",
               }}
             >
+
               <div className={styles.box}>
                 <div className={styles.cateImage}>
                   <Image
