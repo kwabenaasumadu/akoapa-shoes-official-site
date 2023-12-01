@@ -47,6 +47,13 @@ function Index() {
 
   return (
     <>
+     <Head>
+          <title>Sign up - Akoapa Shoes</title>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+      </Head>
       <div className={styles.container}>
         <div className={styles.containerHeader}>
           <p>Register</p>

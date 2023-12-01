@@ -16,7 +16,7 @@ function Index() {
   return (
     <>
       <Head>
-          <title>Akoapa Shoes</title>
+          <title>Akoapa Shoes - Home</title>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
