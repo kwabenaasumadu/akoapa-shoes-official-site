@@ -32,7 +32,7 @@ function Index() {
 
               <div className={styles.boxText}>
                 <p>
-                Our customer care team is here to assist you at every stage. If you have any questions regarding your order, shipping details, or need further assistance, don't hesitate to reach out to our dedicated support team.
+                Our customer care team is here to assist you at every stage. If you have any questions regarding your order, shipping details, or need further assistance, don&apos;t hesitate to reach out to our dedicated support team.
                 </p>
               </div>
             </div>

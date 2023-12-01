@@ -15,14 +15,8 @@ function Index() {
             <Link href="/" className={styles.eachLink}>
               Home
             </Link>
-            <Link href="/" className={styles.eachLink}>
-              About
-            </Link>
             <Link href="/shoe_categories/" className={styles.eachLink}>
               Categories
-            </Link>
-            <Link href="/" className={styles.eachLink}>
-              Contact
             </Link>
             <Link href="/user_login" className={styles.eachLink}>
               Sign in

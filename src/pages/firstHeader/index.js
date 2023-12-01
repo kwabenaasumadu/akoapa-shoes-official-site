@@ -46,20 +46,15 @@ function Index() {
                 <Link href="/" className={styles.eachLink} onClick={closeMobileNavLinks}>
                   Home
                 </Link>
-                <Link href="/" className={styles.eachLink} onClick={closeMobileNavLinks}>
-                  About
-                </Link>
+
                 <Link href="/shoe_categories/" className={styles.eachLink} onClick={closeMobileNavLinks}>
                   Categories
-                </Link>
-                <Link href="/" className={styles.eachLink} onClick={closeMobileNavLinks}>
-                  Contact
                 </Link>
 
                 <Link href="/user_login" className={styles.eachLink} onClick={closeMobileNavLinks}>
                   Sign In
                 </Link>
-
+                
                 <Link href="/user_signout" className={styles.eachLink} onClick={closeMobileNavLinks}>
                   Sign Out
                 </Link>
