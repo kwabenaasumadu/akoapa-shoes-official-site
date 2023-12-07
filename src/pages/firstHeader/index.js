@@ -10,7 +10,6 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import Twitter from "@mui/icons-material/Twitter";
 
 function Index() {
-
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   function openMobileNavLinks() {
@@ -43,20 +42,36 @@ function Index() {
               }`}
             >
               <div className={styles.link}>
-                <Link href="/" className={styles.eachLink} onClick={closeMobileNavLinks}>
+                <Link
+                  href="/"
+                  className={styles.eachLink}
+                  onClick={closeMobileNavLinks}
+                >
                   Home
                 </Link>
 
-                <Link href="/shoe_categories/" className={styles.eachLink} onClick={closeMobileNavLinks}>
+                <Link
+                  href="/shoe_categories/"
+                  className={styles.eachLink}
+                  onClick={closeMobileNavLinks}
+                >
                   Categories
                 </Link>
 
-                <Link href="/user_login" className={styles.eachLink} onClick={closeMobileNavLinks}>
-                  Sign In
+                <Link
+                  href="/contact_us"
+                  className={styles.eachLink}
+                  onClick={closeMobileNavLinks}
+                >
+                  Contact
                 </Link>
-                
-                <Link href="/user_signout" className={styles.eachLink} onClick={closeMobileNavLinks}>
-                  Sign Out
+
+                <Link
+                  href="/user_login"
+                  className={styles.eachLink}
+                  onClick={closeMobileNavLinks}
+                >
+                  Sign In
                 </Link>
               </div>
             </div>

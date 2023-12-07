@@ -18,6 +18,9 @@ function Index() {
             <Link href="/shoe_categories/" className={styles.eachLink}>
               Categories
             </Link>
+            <Link href="/contact_us" className={styles.eachLink}>
+              Contact
+            </Link>
             <Link href="/user_login" className={styles.eachLink}>
               Sign in
             </Link>

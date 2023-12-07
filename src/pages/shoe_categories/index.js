@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/shoe_cat.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 function Index() {
   return (

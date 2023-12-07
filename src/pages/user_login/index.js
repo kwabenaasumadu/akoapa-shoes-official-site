@@ -7,6 +7,7 @@ import { auth } from "../../../firebase.config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { sendPasswordResetEmail } from "firebase/auth";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 function Index() {
   const [email, setEmail] = useState("");
