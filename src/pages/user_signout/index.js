@@ -4,6 +4,7 @@ import { auth } from "../../../firebase.config";
 import { useRouter } from "next/router";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Head from "next/head";
 
 function Index() {
   const router = useRouter();

@@ -6,6 +6,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from "next/router";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Head from "next/head";
 
 function Index() {
   const [email, setEmail] = useState("");
